@@ -21,6 +21,10 @@ findf() {
     find "$directory" -type f -iname "*$pattern*" 2>/dev/null | grep -i $pattern
 }
 
+## Use example: get-process %mem
+get-process(){
+        ps -eo pid,ppid,user,cmd,%cpu,%mem --sort=-$1 | less
+}
 
 
 
