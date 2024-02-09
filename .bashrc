@@ -1,7 +1,7 @@
 # Personal aliases
 alias ap='ansible-playbook'
 alias gs='git status'
-alias lS='ls -lSha' # this will list the files and order them by size. 
+alias sc='systemctl'
 
 # Personal functions
 ## Use example: findd /etc ssh
