@@ -2,6 +2,14 @@
 alias ap='ansible-playbook'
 alias gs='git status'
 alias sc='systemctl'
+alias ad=ansible-doc
+alias ap=ansible-playbook
+
+# think ansible facts. Put hostname at end
+alias af="ansible -m setup" 
+
+# think ansible host vars. Put hostname at end
+alias ahv="ansible -m debug -a 'var=hostvars'"
 
 # Personal functions
 ## Use example: findd /etc ssh
