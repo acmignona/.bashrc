@@ -16,7 +16,7 @@ alias debug="ansible-playbook <pathToPlaybook>/check_var.yml"
 
 # Ansible: Documentation
 alias ad=ansible-doc
-alias ad="ansible-doc -s"
+alias ads="ansible-doc -s"
 alias adl="ansible-doc -l | grep -i"
 
 # Quick Directories
