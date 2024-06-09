@@ -1,0 +1,12 @@
+---
+- name: check vars
+  hosts: <ENTER_YOUR_HOSTNAME_HERE>
+  vars_prompt:
+  - name: my_var
+    prompt: enter var
+    private: false
+  tasks:
+  - name: debuuging
+    debug:
+      var: my_var
+
