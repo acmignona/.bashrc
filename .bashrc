@@ -12,7 +12,7 @@ ansible-doc $1 | grep -A 120 "EXAMPLES" | less
 }
 alias ahv="ansible -m debug -a 'var=hostvars'"
 alias af="ansible-playbook <pathToPlaybook>/ansible_facts.yml"
-alias debug="ansible-playbook <pathToPlaybook>/check_var.yml"
+alias acv="ansible-playbook <pathToPlaybook>/check_var.yml"
 
 # Ansible: Documentation
 alias ad=ansible-doc
