@@ -11,17 +11,22 @@ adex() {
 ansible-doc $1 | grep -A 120 "EXAMPLES" | less
 }
 alias ahv="ansible -m debug -a 'var=hostvars'"
-alias af="ansible-playbook <pathToPlaybook>/ansible_facts.yml"
+alias af="ansible-playbook <pathToPlaybook>/ansible_facts.yml | less"
 alias acv="ansible-playbook <pathToPlaybook>/check_var.yml"
 
 # Ansible: Documentation
 alias ad=ansible-doc
 alias ads="ansible-doc -s"
 alias adl="ansible-doc -l | grep -i"
+alias akw="ansible-doc -t keyword -l | less"
 
-# Quick Directories
+# Ansible: Quick Directories
 alias rsr="cd /usr/share/doc/rhel-system-roles/"
-alias wd="cd /home/ansible/tasks/task10/"
+alias wd="cd <currentAnsibleDirectory>"
+
+# bashrc
+alias src="source ~/.bashrc"
+alias vrc="vim ~/.bashrc"
 
 # Personal aliases
 alias gs='git status'
