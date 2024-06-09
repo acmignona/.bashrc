@@ -14,7 +14,7 @@ Simply run `ahv <ansible_node_name>` and explore the available ansible variables
 
 
 ### `acv`
-`acv`: When prompted, enter your ansible variable/fact to test. This is a useful after identifying a variable from `af` or `ahv` that you would like to use. Simply test that variable with this command before implementing it in another playbook. 
+Simply run `acv` and enter your ansible variable/fact when prompted. This is a useful after identifying a variable from `af` or `ahv` that you would like to test and subsequently implement in another playbook. 
 
 #### Example: 
 ```
