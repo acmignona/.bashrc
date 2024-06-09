@@ -1,17 +1,33 @@
+# Ansible / RHCE Aliases and functions
+alias ap=ansible-playbook
+alias aps='ansible-playbook --syntax-check'
+
+# Ansible: Others
+alias ag=ansible-galaxy
+alias av="ansible-vault"
+
+# Ansible: debugging
+function adex() {
+ansible-doc $1 | grep -A 120 "EXAMPLES" | less
+}
+alias ahv="ansible -m debug -a 'var=hostvars'"
+alias af="ansible-playbook <pathToPlaybook>/ansible_facts.yml"
+alias debug="ansible-playbook <pathToPlaybook>/check_var.yml"
+
+# Ansible: Documentation
+alias ad=ansible-doc
+alias ad="ansible-doc -s"
+alias adl="ansible-doc -l | grep -i"
+
+# Quick Directories
+alias rsr="cd /usr/share/doc/rhel-system-roles/"
+alias wd="cd /home/ansible/tasks/task10/"
+
 # Personal aliases
 alias gs='git status'
 alias sc='systemctl'
 alias findf="find . -type f 2>/dev/null | grep -i"
 alias findd="find . -type d 2>/dev/null | grep -i"
-
-# Ansible related aliases  
-alias ad=ansible-doc
-alias adl="ansible-doc -l"
-alias akw=ansible-doc -t keyword | less # use -l to list them all, use adk <keyword> to see notes on that keyword
-alias ap=ansible-playbook
-alias ag=ansible-galaxy
-alias af="ansible -m setup" # think ansible facts. Put hostname at end
-alias ahv="ansible -m debug -a 'var=hostvars'" # think ansible host vars. Put hostname at end 
 
 ## Use example: get-process %mem
 get-process(){
