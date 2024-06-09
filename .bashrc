@@ -7,7 +7,7 @@ alias ag=ansible-galaxy
 alias av="ansible-vault"
 
 # Ansible: debugging
-function adex() {
+adex() {
 ansible-doc $1 | grep -A 120 "EXAMPLES" | less
 }
 alias ahv="ansible -m debug -a 'var=hostvars'"
