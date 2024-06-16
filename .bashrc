@@ -8,7 +8,7 @@ alias apc='ansible-playbook --check'
 alias ag=ansible-galaxy
 alias av="ansible-vault"
 alias an=ansible-navigator
-alias anr='ansible-navigator run -m stdout -i inventory --pp never'
+alias anr='ansible-navigator run -m stdout --pp never'
 
 # Ansible: debugging
 adex() {
