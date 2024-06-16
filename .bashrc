@@ -1,5 +1,9 @@
 # Ansible / RHCE Aliases and functions
+## Ansible: ad hoc
 alias a=ansible
+alias aa='ansible all -m shell -a'
+
+## Ansible: playbooks
 alias ap=ansible-playbook
 alias aps='ansible-playbook --syntax-check'
 alias apc='ansible-playbook --check' 
