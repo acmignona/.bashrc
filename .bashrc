@@ -1,10 +1,14 @@
 # Ansible / RHCE Aliases and functions
+alias a=ansible
 alias ap=ansible-playbook
 alias aps='ansible-playbook --syntax-check'
+alias apc='ansible-playbook --check' 
 
 # Ansible: Others
 alias ag=ansible-galaxy
 alias av="ansible-vault"
+alias an=ansible-navigator
+alias anr='ansible-navigator run -m stdout -i inventory --pp never'
 
 # Ansible: debugging
 adex() {
